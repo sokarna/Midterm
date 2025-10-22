@@ -1,0 +1,36 @@
+body {
+  background-color: #2d2d2d;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.light-gray-header {
+  background-color: #4a4a4a;
+}
+
+.link-orange {
+  color: orangered;
+  text-decoration: none;
+}
+.link-orange:hover {
+  text-decoration: underline;
+}
+
+.input-box {
+  background-color: #222;
+  color: #ddd;
+  border: 1px solid #555;
+}
+
+.output-screen {
+  background-color: #3d2f00;
+  border: 1px solid #666;
+  min-height: 60px;
+  font-size: 1.2rem;
+}
+
+.purple-text {
+  color: #9370db;
+}
+
+/*# sourceMappingURL=style.css.map */

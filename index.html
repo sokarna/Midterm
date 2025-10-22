@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="mb-5 light-gray-header py-2 px-3">
+    <div class="container-fluid">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center gap-3">
+          <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" class="link-orange">HTML5</a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="link-orange">JavaScript</a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="link-orange">CSS</a>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <button class="btn btn-secondary btn-sm" data-bs-theme-value="dark" onclick="setTheme('dark')">Dark</button>
+          <button class="btn btn-light btn-sm" data-bs-theme-value="light" onclick="setTheme('light')">Light</button>
+          <button class="btn btn-secondary btn-sm">Contact Me</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="container mb-3">
+    <!-- First Row -->
+    <div class="row mb-3">
+      <div class="col-md-2 text-light fs-6">
+        <p class="purple-text mb-0">Factorial<br>calculator.</p>
+        <p class="purple-text mb-0">n! = 1x2x3 … xn.</p>
+        <p class="purple-text">e.g. 5! = 120.</p>
+      </div>
+      <div class="col-md-10">
+        <input type="number" id="numberInput" class="form-control input-box mb-3 fs-4" placeholder="Enter a number" />
+      </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row mb-4">
+      <div class="col-md-2 d-flex justify-content-start">
+        <button class="btn btn-secondary" onclick="calculateFactorial()">Enter</button>
+      </div>
+      <div class="col-md-10">
+        <div id="output" class="output-screen text-light p-3">Output will be displayed here…</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center light-gray-header py-3">
+    <small class="text-light">Simple factorial calculator © 2025</small>
+  </footer>
+
+  <script src="js/factorial.js"></script>
+</body>
+</html>
